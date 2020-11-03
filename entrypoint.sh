@@ -24,8 +24,10 @@ command_args="${command_args} ${INPUT_PATH}"
 echo "Resulting command: flake8 ${command_args}"
 
 # Run flake8
-echo "Flake8 versino: ${flake8 --version}"
+echo "Flake8 versino: "
+flake8 --version
 
+echo "\n"
 flake8 ${command_args}
 echo ""
 res=$?

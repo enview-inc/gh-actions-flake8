@@ -1,4 +1,4 @@
-flake8==3.8.3
+flake8==3.3.0
 flake8-print
 mccabe==0.6.1
 pycodestyle==2.6.0

@@ -24,6 +24,8 @@ command_args="${command_args} ${INPUT_PATH}"
 echo "Resulting command: flake8 ${command_args}"
 
 # Run flake8
+flake8 --version
+
 flake8 ${command_args}
 res=$?
 if [ "$res" = "0" ]; then

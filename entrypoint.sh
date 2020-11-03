@@ -16,6 +16,9 @@ echo " - max line length: '${INPUT_MAX_LINE_LENGTH}'"
 if [ "x${INPUT_MAX_LINE_LENGTH}" != "x" ]; then
     command_args="${command_args} --max-line-length ${INPUT_MAX_LINE_LENGTH}"
 fi
+if [ "x${INPUT_SELECT}" != "x" ]; then
+    command_args="${command_args} --select ${INPUT_SELECT}"
+fi
 echo " - path: '${INPUT_PATH}'"
 command_args="${command_args} ${INPUT_PATH}"
 echo "Resulting command: flake8 ${command_args}"

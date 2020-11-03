@@ -18,6 +18,10 @@ inputs:
     description: 'If set, only warn, never error'
     required: false
     default: ''
+  select:
+    description: "If set, only select codes"
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'

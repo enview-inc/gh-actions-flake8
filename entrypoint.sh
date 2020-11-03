@@ -27,6 +27,7 @@ echo "Resulting command: flake8 ${command_args}"
 flake8 --version
 
 flake8 ${command_args} .
+flake8 ${command_args} /github/workspace
 res=$?
 if [ "$res" = "0" ]; then
     echo "Flake8 found no problems"

@@ -7,6 +7,8 @@
 This GitHub Actions runs flake8 over your code.
 Any warnings or errors will be annotated in the Pull Request.
 
+This is a fork of this repo: https://github.com/TrueBrain/actions-flake8
+
 ## Usage
 
 ```

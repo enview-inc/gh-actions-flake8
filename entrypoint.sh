@@ -26,8 +26,7 @@ echo "Resulting command: flake8 ${command_args}"
 # Run flake8
 flake8 --version
 
-flake8 ${command_args} .
-flake8 ${command_args} /github/workspace
+flake8 ${command_args}
 res=$?
 if [ "$res" = "0" ]; then
     echo "Flake8 found no problems"
@@ -43,6 +42,5 @@ echo "::remove-matcher owner=flake8-warning::"
 if [ -n "${INPUT_ONLY_WARN}" ]; then
     exit 0
 else
-    echo "Res is:::: ${res}"
     exit $res
 fi

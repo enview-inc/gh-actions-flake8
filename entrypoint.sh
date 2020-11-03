@@ -24,9 +24,10 @@ command_args="${command_args} ${INPUT_PATH}"
 echo "Resulting command: flake8 ${command_args}"
 
 # Run flake8
-flake8 --version
+echo "Flake8 versino: ${flake8 --version}"
 
 flake8 ${command_args}
+echo ""
 res=$?
 if [ "$res" = "0" ]; then
     echo "Flake8 found no problems"

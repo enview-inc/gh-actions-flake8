@@ -43,5 +43,6 @@ echo "::remove-matcher owner=flake8-warning::"
 if [ -n "${INPUT_ONLY_WARN}" ]; then
     exit 0
 else
+    echo "Res is:::: ${res}"
     exit $res
 fi

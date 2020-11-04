@@ -16,9 +16,11 @@ echo " - max line length: '${INPUT_MAX_LINE_LENGTH}'"
 if [ "x${INPUT_MAX_LINE_LENGTH}" != "x" ]; then
     command_args="${command_args} --max-line-length ${INPUT_MAX_LINE_LENGTH}"
 fi
+echo " - select: '${INPUT_SELECT}'"
 if [ "x${INPUT_SELECT}" != "x" ]; then
     command_args="${command_args} --select ${INPUT_SELECT}"
 fi
+echo " - exclude: '${INPUT_EXCLUDE}'"
 if [ "x${INPUT_EXCLUDE}" != "x" ]; then
     command_args="${command_args} --exclude ${INPUT_EXCLUDE}"
 fi

@@ -64,3 +64,16 @@ uses: enview-inc/gh-actions-flake8@master
 with:
   only_warn: 1
 ```
+
+### Parameter: exclude
+
+Exclude a path
+
+This parameter is optional; setting this to any value will enable it.
+
+```
+uses: enview-inc/gh-actions-flake8@master
+with:
+  exclude: .git, path
+```
+

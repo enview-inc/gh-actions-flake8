@@ -6,6 +6,10 @@ inputs:
     description: 'Path to run flake8 in'
     required: false
     default: ''
+  exclude:
+    description: "Exclude path or file"
+    required: false
+    default: ''
   ignore:
     description: 'Skip errors and warnings (e.g. E4,W)'
     required: false

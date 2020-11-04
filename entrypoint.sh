@@ -33,6 +33,8 @@ if [ "$res" = "0" ]; then
     echo "Flake8 found no problems"
 else
     echo "Flake8 found one or more problems"
+    echo "If these are print statements, you can resolve them by using the enviewlogging package here: "
+    echo "https://github.com/enview-inc/TheUtilities/tree/develop/enviewlogging_folder"
 fi
 
 # Remove the matcher, so no other jobs hit it.
